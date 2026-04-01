@@ -1,7 +1,6 @@
 import AboutSection from './components/AboutSection';
 import FlightPartners from './components/FlightPartners';
 import FeaturedPlaces from './components/FeaturedPlaces';
-import WhyChooseUs from './components/WhyChooseUs';
 import HotDeals from './components/HotDeals';
 import Testimonials from './components/Testimonials';
 import RibbonMarquee from './components/RibbonMarquee';
