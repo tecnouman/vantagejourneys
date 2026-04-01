@@ -71,7 +71,7 @@ export default function Testimonials() {
         <div className="relative flex items-center">
           <button
             onClick={handlePrev}
-            className="absolute -left-5 z-10 w-11 h-11 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5b3cc4]/30 active:scale-95 max-lg:hidden"
+            className="absolute -left-5 z-10 w-11 h-11 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-all duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#5b3cc4]/30 active:scale-95 max-lg:hidden cursor-pointer"
             aria-label="Previous testimonials"
           >
             <ArrowLeft size={18} strokeWidth={2.5} />
@@ -109,7 +109,7 @@ export default function Testimonials() {
 
           <button
             onClick={handleNext}
-            className="absolute -right-5 z-10 w-11 h-11 rounded-full bg-[#5b3cc4] flex items-center justify-center text-white hover:bg-[#4a2fb3] transition-all duration-200 shadow-md shadow-[#5b3cc4]/30 focus:outline-none focus:ring-2 focus:ring-[#5b3cc4]/40 active:scale-95 max-lg:hidden"
+            className="absolute -right-5 z-10 w-11 h-11 rounded-full bg-[#5b3cc4] flex items-center justify-center text-white hover:bg-[#4a2fb3] transition-all duration-200 shadow-md shadow-[#5b3cc4]/30 focus:outline-none focus:ring-2 focus:ring-[#5b3cc4]/40 active:scale-95 max-lg:hidden cursor-pointer"
             aria-label="Next testimonials"
           >
             <ArrowRight size={18} strokeWidth={2.5} />
@@ -119,14 +119,14 @@ export default function Testimonials() {
         <div className="flex items-center justify-center gap-4 mt-8 lg:hidden">
           <button
             onClick={handlePrev}
-            className="w-11 h-11 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-all duration-200 shadow-sm focus:outline-none active:scale-95"
+            className="w-11 h-11 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-all duration-200 shadow-sm focus:outline-none active:scale-95 cursor-pointer"
             aria-label="Previous testimonials"
           >
             <ArrowLeft size={18} strokeWidth={2.5} />
           </button>
           <button
             onClick={handleNext}
-            className="w-11 h-11 rounded-full bg-[#5b3cc4] flex items-center justify-center text-white hover:bg-[#4a2fb3] transition-all duration-200 shadow-md shadow-[#5b3cc4]/30 focus:outline-none active:scale-95"
+            className="w-11 h-11 rounded-full bg-[#5b3cc4] flex items-center justify-center text-white hover:bg-[#4a2fb3] transition-all duration-200 shadow-md shadow-[#5b3cc4]/30 focus:outline-none active:scale-95 cursor-pointer"
             aria-label="Next testimonials"
           >
             <ArrowRight size={18} strokeWidth={2.5} />

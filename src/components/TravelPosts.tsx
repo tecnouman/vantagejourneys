@@ -44,7 +44,7 @@ export default function TravelPosts() {
           </h2>
         </div>
 
-        <button className="bg-[#5d58d8] hover:bg-[#ff5a36] text-white px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 whitespace-nowrap mb-2">
+        <button className="bg-[#5d58d8] hover:bg-[#ff5a36] text-white px-8 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 whitespace-nowrap mb-2 cursor-pointer">
           View All Post
         </button>
       </div>

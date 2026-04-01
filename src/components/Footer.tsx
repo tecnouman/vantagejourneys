@@ -107,7 +107,7 @@ export default function Footer() {
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="absolute right-0 -top-6 w-12 h-12 bg-[#ff5a36] text-white rounded-full flex items-center justify-center hover:bg-[#e04a29] transition-all duration-300 shadow-lg shadow-[#ff5a36]/30 group"
+            className="absolute right-0 -top-6 w-12 h-12 bg-[#ff5a36] text-white rounded-full flex items-center justify-center hover:bg-[#e04a29] transition-all duration-300 shadow-lg shadow-[#ff5a36]/30 group cursor-pointer"
           >
             <ArrowRight className="w-6 h-6 -rotate-90 group-hover:-translate-y-1 transition-transform duration-300" strokeWidth={2.5} />
           </button>

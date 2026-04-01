@@ -73,7 +73,7 @@ export default function FindTrip({ className = '' }: FindTripProps) {
   }, []);
 
   return (
-    <div className={`w-full my-4 md:my-6 bg-white rounded-[28px] shadow-[0_18px_40px_-24px_rgba(17,24,39,0.32)] border border-gray-100 md:p-4 ${className}`}>
+    <div className={`m-50 md:my-6 bg-white rounded-[28px] shadow-[0_18px_40px_-24px_rgba(17,24,39,0.32)] border border-gray-100 md:p-4 ${className}`}>
       <div className="flex flex-col xl:flex-row gap-3 xl:items-center">
         <div ref={selectGroupRef} className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 flex-1 gap-2">
           {fields.map((field, index) => (
@@ -86,7 +86,7 @@ export default function FindTrip({ className = '' }: FindTripProps) {
                 <button
                   type="button"
                   onClick={() => handleToggleField(index)}
-                  className="w-full flex items-center justify-between gap-2 bg-transparent text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors outline-none"
+                  className="w-full flex items-center justify-between gap-2 bg-transparent text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors outline-none cursor-pointer"
                   aria-haspopup="listbox"
                   aria-expanded={openFieldIndex === index}
                 >
@@ -108,7 +108,7 @@ export default function FindTrip({ className = '' }: FindTripProps) {
                         key={option}
                         type="button"
                         onClick={() => handleOptionSelect(index, option)}
-                        className={`w-full rounded-xl px-3 py-2.5 text-left text-sm transition-colors ${isSelected ? 'bg-[#f2f0ff] text-[#4d3fb3] font-semibold' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
+                        className={`w-full rounded-xl px-3 py-2.5 text-left text-sm transition-colors cursor-pointer ${isSelected ? 'bg-[#f2f0ff] text-[#4d3fb3] font-semibold' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
                         role="option"
                         aria-selected={isSelected}
                       >
@@ -121,7 +121,7 @@ export default function FindTrip({ className = '' }: FindTripProps) {
             </div>
           ))}
         </div>
-        <button className="bg-[#5b4cc4] hover:bg-[#4a3ca1] transition-colors text-white font-medium px-8 h-12 rounded-2xl shrink-0 whitespace-nowrap w-full xl:w-auto">
+        <button className="bg-[#5b4cc4] hover:bg-[#ff5a36] transition-colors duration-300 text-white font-medium px-8 h-12 rounded-2xl shrink-0 whitespace-nowrap w-full xl:w-auto cursor-pointer">
           Find Your Trip
         </button>
       </div>

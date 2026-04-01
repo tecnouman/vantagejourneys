@@ -56,7 +56,7 @@ export default function HeroSection() {
         type="button"
         aria-label="Previous slide"
         onClick={goToPreviousSlide}
-        className="absolute left-3 md:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition-all z-20 border border-white/20 pointer-events-auto"
+        className="absolute left-3 md:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition-all z-20 border border-white/20 pointer-events-auto cursor-pointer"
       >
         <ArrowLeft size={20} />
       </button>
@@ -64,7 +64,7 @@ export default function HeroSection() {
         type="button"
         aria-label="Next slide"
         onClick={goToNextSlide}
-        className="absolute right-3 md:right-6 lg:right-8 top-1/2 transform -translate-y-1/2 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition-all z-20 border border-white/20 pointer-events-auto"
+        className="absolute right-3 md:right-6 lg:right-8 top-1/2 transform -translate-y-1/2 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white transition-all z-20 border border-white/20 pointer-events-auto cursor-pointer"
       >
         <ArrowRight size={20} />
       </button>
@@ -101,7 +101,7 @@ export default function HeroSection() {
             type="button"
             aria-label={`Go to slide ${index + 1}`}
             onClick={() => goToSlide(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
+            className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
               currentSlide === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/80'
             }`}
           />

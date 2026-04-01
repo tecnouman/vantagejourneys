@@ -55,14 +55,14 @@ export default function NavBar({ logoSrc }: NavBarProps) {
         </div>
 
         <div className="hidden md:flex">
-          <button className="bg-[#5b4cc4] hover:bg-[#4a3ca1] transition-colors text-white font-medium px-6 h-[90px] flex items-center space-x-2 w-40 justify-center">
+          <button className="bg-[#5b4cc4] hover:bg-[#4a3ca1] transition-colors text-white font-medium px-6 h-[90px] flex items-center space-x-2 w-40 justify-center cursor-pointer">
             <span>Book Now</span>
             <ArrowRight size={16} />
           </button>
         </div>
 
         <div className="lg:hidden flex items-center">
-          <button className="text-gray-700">
+          <button className="text-gray-700 cursor-pointer">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>

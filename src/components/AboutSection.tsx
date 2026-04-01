@@ -60,7 +60,7 @@ export default function AboutSection() {
         </div>
 
         <div className="flex flex-wrap items-center gap-6 mt-8 pt-4">
-          <button className="group relative flex items-center gap-4 pl-6 pr-2 py-2 bg-[#5d58d8] hover:bg-[#ff5a36] text-white rounded-full font-semibold transition-all duration-500 shadow-lg hover:shadow-xl hover:-translate-y-1 overflow-hidden">
+          <button className="group relative flex items-center gap-4 pl-6 pr-2 py-2 bg-[#5d58d8] hover:bg-[#ff5a36] text-white rounded-full font-semibold transition-all duration-500 shadow-lg hover:shadow-xl hover:-translate-y-1 overflow-hidden cursor-pointer">
             <span className="relative z-10 text-sm sm:text-base">More About Travil</span>
             <span className="relative z-10 bg-white text-[#5d58d8] group-hover:text-[#ff5a36] rounded-full p-2 transition-colors duration-500 shadow-sm">
               <ArrowRight size={18} strokeWidth={2.5} />

@@ -137,7 +137,7 @@ export default function HotDeals() {
           <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-md mb-2">
             Curated destinations and tours that capture the true essence of location, ensuring you experience. Our attraction pass save you more.
           </p>
-          <button className="bg-[#5d58d8] hover:bg-[#ff5a36] text-white px-8 py-3.5 rounded-full font-bold transition-all duration-300 w-max shadow-lg shadow-[#5d58d8]/30 hover:shadow-[#ff5a36]/30 hover:-translate-y-1 mt-4">
+          <button className="bg-[#5d58d8] hover:bg-[#ff5a36] text-white px-8 py-3.5 rounded-full font-bold transition-all duration-300 w-max shadow-lg shadow-[#5d58d8]/30 hover:shadow-[#ff5a36]/30 hover:-translate-y-1 mt-4 cursor-pointer">
             Explore More
           </button>
         </div>

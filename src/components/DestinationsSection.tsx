@@ -18,7 +18,7 @@ export default function DestinationsSection() {
             <h3 className="text-[#5b4cc4] font-medium text-base md:text-lg mb-1 tracking-wide">Travel Destinations</h3>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Trendy Travel Locations</h2>
           </div>
-          <button className="group flex items-center bg-[#5b4cc4] hover:bg-[#ff5a36] transition-colors duration-300 text-white font-medium pl-5 pr-2 py-2 rounded-full shadow-md">
+          <button className="group flex items-center bg-[#5b4cc4] hover:bg-[#ff5a36] transition-colors duration-300 text-white font-medium pl-5 pr-2 py-2 rounded-full shadow-md cursor-pointer">
             <span className="mr-3">Explore More</span>
             <div className="bg-white w-9 h-9 rounded-full flex items-center justify-center shadow-sm">
               <ArrowRight size={18} className="text-gray-800" />
