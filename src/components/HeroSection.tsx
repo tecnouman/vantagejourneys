@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import FindTrip from './FindTrip';
 
 export default function HeroSection() {
   const travelImages = [

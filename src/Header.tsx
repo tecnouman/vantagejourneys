@@ -1,7 +1,6 @@
 import TopBar from './components/TopBar';
 import NavBar from './components/NavBar';
 import HeroSection from './components/HeroSection';
-import DestinationsSection from './components/DestinationsSection';
 import headerLogo from './assets/header-logo.png';
 
 export default function Header() {
