@@ -1,5 +1,4 @@
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
-import SearchBar from './SearchBar';
 
 const destinations = [
   { city: 'Thimpu', country: 'Bhutan', image: 'https://images.unsplash.com/photo-1623146465057-7988880696cb?w=800&q=80' },
@@ -14,8 +13,6 @@ export default function DestinationsSection() {
   return (
     <section className="w-full bg-white pb-16 md:pb-24">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-        <SearchBar className="-mt-16 md:-mt-20 lg:-mt-24 mb-10 md:mb-12 relative z-30" />
-
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-10 gap-5 md:gap-0">
           <div className="max-w-2xl">
             <h3 className="text-[#5b4cc4] font-medium text-base md:text-lg mb-1 tracking-wide">Travel Destinations</h3>

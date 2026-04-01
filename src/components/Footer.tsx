@@ -1,28 +1,39 @@
-import { Plane, Users, Camera, Briefcase, ArrowRight, Phone, Mail, MapPin, Navigation } from 'lucide-react';
+import { Users, Camera, Briefcase, ArrowRight, Phone, Mail, MapPin, Navigation } from 'lucide-react';
+import headerLogo from '../assets/header-logo.png';
+import DirectorMessage from './DirectorMessage';
+
+const directors = [
+  {
+    title: 'Board Of Director',
+    message:
+      'Arsalan Ghouri is the visionary Director of Vantage Journeys, bringing years of expertise in premium travel management and strategic business development. He specializes in designing innovative travel solutions, fostering strong global partnerships... Arsalan Ghouri continues to lead Vantage Journeys with professionalism, innovation, and a forward-looking approach.',
+    name: 'Arsalan Ghouri',
+    role: 'Director',
+    imageUrl:
+      'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+  },
+  {
+    title: 'Board Of Director',
+    message:
+      'Manahil is the visionary Director of Vantage Journeys, bringing years of expertise in premium travel management and strategic business development. He specializes in designing innovative travel solutions, fostering strong global partnerships... Arsalan Ghouri continues to lead Vantage Journeys with professionalism, innovation, and a forward-looking approach.',
+    name: 'Manahil',
+    role: 'Director',
+    imageUrl:
+      'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+  },
+];
+
+const quickLinks = ['All Destination', 'Our Team', 'Tour Places', 'Reviews', 'Link Tree'];
+const legalDocs = ['Vantage Journeys NTN', 'DTS License', 'IATA Certification'];
 
 export default function Footer() {
   return (
     <footer className="w-full bg-white pt-24 pb-6 border-t border-gray-100 flex flex-col items-center">
-      <div className="max-w-4xl mx-auto px-6 text-center mb-20">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#111827] mb-8">Board Of Director</h2>
-        <p className="text-gray-500 italic text-sm md:text-base leading-relaxed mb-10">
-          "Arsalan Ghouri is the visionary Director of Vantage Journeys, bringing years of expertise in premium travel management and strategic business development. He specializes in designing innovative travel solutions, fostering strong global partnerships... Arsalan Ghouri continues to lead Vantage Journeys with professionalism, innovation, and a forward-looking approach."
-        </p>
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-24 h-24 rounded-full border-4 border-white shadow-[0_8px_30px_-4px_rgba(0,0,0,0.15)] overflow-hidden mb-4">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Arsalan Ghouri" className="w-full h-full object-cover" />
-          </div>
-          <h4 className="font-bold text-[#111827] text-lg">Arsalan Ghouri</h4>
-          <p className="text-sm text-[#ff5a36] font-medium mt-1">Director</p>
-        </div>
-      </div>
+      <DirectorMessage directors={directors} />
 
       <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pt-16 border-t border-gray-100">
         <div className="flex flex-col">
-          <div className="text-2xl font-black text-[#5d58d8] flex items-center gap-2 mb-6 tracking-tight">
-            <Plane className="w-8 h-8 rotate-45" strokeWidth={3} />
-            VANTAGE JOURNEYS
-          </div>
+          <img src={headerLogo} alt="Vantage Journeys" className="h-16 w-auto object-contain mb-6" />
           <p className="text-sm text-gray-500 leading-relaxed mb-8 pr-4">
             From your first step to your dream destination, Vantage Journeys is by your side. Providing the best travel experiences.
           </p>
@@ -39,7 +50,7 @@ export default function Footer() {
             Quick Links
           </h4>
           <ul className="space-y-4 text-[15px] text-gray-500 font-medium">
-            {["All Destination", "Our Team", "Tour Places", "Reviews", "Link Tree"].map((link) => (
+            {quickLinks.map((link) => (
               <li key={link}><a href="#" className="hover:text-[#ff5a36] transition-colors flex items-center gap-2"><ArrowRight size={14} className="text-[#5d58d8]" /> {link}</a></li>
             ))}
           </ul>
@@ -81,7 +92,7 @@ export default function Footer() {
             Legal Documents
           </h4>
           <ul className="space-y-4 text-[15px] text-gray-500 font-medium">
-            {["Vantage Journeys NTN", "DTS License", "IATA Certification"].map((doc) => (
+            {legalDocs.map((doc) => (
               <li key={doc}><a href="#" className="hover:text-[#5d58d8] transition-colors flex items-center gap-3"><Navigation size={18} className="text-[#ff5a36]" /> {doc}</a></li>
             ))}
           </ul>

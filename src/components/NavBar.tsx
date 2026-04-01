@@ -10,25 +10,35 @@ const navLinks = [
   { name: 'Pages', hasDropdown: true },
 ];
 
-export default function NavBar() {
+type NavBarProps = {
+  logoSrc?: string;
+};
+
+export default function NavBar({ logoSrc }: NavBarProps) {
   return (
     <nav className="bg-white w-full shadow-sm z-40 relative">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex justify-between items-center h-[90px]">
         <div className="flex items-center space-x-2 cursor-pointer">
-          <div className="relative flex items-center justify-center w-10 h-10">
-            <svg viewBox="0 0 100 100" className="w-10 h-10 fill-[#f97316]">
-              <path d="M50,10 C27.9,10 10,27.9 10,50 C10,72.1 27.9,90 50,90 C72.1,90 90,72.1 90,50 C90,27.9 72.1,10 50,10 Z M50,85 C30.7,85 15,69.3 15,50 C15,30.7 30.7,15 50,15 C69.3,15 85,30.7 85,50 C85,69.3 69.3,85 50,85 Z" />
-              <path d="M65,45 L35,45 L45,30 Z" className="fill-[#5b4cc4]" />
-              <path d="M30,50 L70,50 L60,65 Z" className="fill-[#333]" />
-            </svg>
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className="text-[#333] font-bold text-xl tracking-tight">VANTAGE</span>
-            <span className="text-[#5b4cc4] font-bold text-xl tracking-tight">
-              JOURNEYS<span className="text-[10px] text-gray-500 align-top ml-1">®</span>
-            </span>
-            <span className="text-[8px] text-gray-500 tracking-widest text-right mr-2">(PVT) LTD</span>
-          </div>
+          {logoSrc ? (
+            <img src={logoSrc} alt="Vantage Journeys" className="h-14 w-auto object-contain" />
+          ) : (
+            <>
+              <div className="relative flex items-center justify-center w-10 h-10">
+                <svg viewBox="0 0 100 100" className="w-10 h-10 fill-[#f97316]">
+                  <path d="M50,10 C27.9,10 10,27.9 10,50 C10,72.1 27.9,90 50,90 C72.1,90 90,72.1 90,50 C90,27.9 72.1,10 50,10 Z M50,85 C30.7,85 15,69.3 15,50 C15,30.7 30.7,15 50,15 C69.3,15 85,30.7 85,50 C85,69.3 69.3,85 50,85 Z" />
+                  <path d="M65,45 L35,45 L45,30 Z" className="fill-[#5b4cc4]" />
+                  <path d="M30,50 L70,50 L60,65 Z" className="fill-[#333]" />
+                </svg>
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="text-[#333] font-bold text-xl tracking-tight">VANTAGE</span>
+                <span className="text-[#5b4cc4] font-bold text-xl tracking-tight">
+                  JOURNEYS<span className="text-[10px] text-gray-500 align-top ml-1">®</span>
+                </span>
+                <span className="text-[8px] text-gray-500 tracking-widest text-right mr-2">(PVT) LTD</span>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="hidden lg:flex items-center space-x-8">
